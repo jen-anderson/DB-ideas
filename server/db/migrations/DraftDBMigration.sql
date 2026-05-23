@@ -25,6 +25,7 @@ CREATE TABLE book (
   condition TEXT,
   status TEXT,
   image TEXT, 
+  lending_terms TEXT,
   created_at TIMESTAMP DEFAULT CURRENT TIMESTAMP,
   updated_at TIMESTAMP DEFAULT CURRENT TIMESTAMP,
   is_deleted BOOLEAN DEFAULT FALSE,
