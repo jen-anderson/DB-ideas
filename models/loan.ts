@@ -1,8 +1,10 @@
-export interface Loans {
-  id: Number
-  book_id: Number
-  lender_id: Number
-  borrower_id: Number
-  status: String // Active || Completed || Overdue
-  due_date: String
+export interface Loan {
+  id: string
+  book_id: string
+  lender_id: string
+  borrower_id: string
+  status: 'Pending' | 'Active' | 'Completed' | 'Overdue' | 'Declined' | 'Cancelled' //Disable requests if on hold, otherwise not available. Can't deal with queues.
+  due_date: string
+  created_at: string
+  updated_at: string
 }
